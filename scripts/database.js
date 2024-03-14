@@ -8,19 +8,20 @@ const database = {
     haulers: [
         {id: 1, name: "Pioneering Spirit", dockId: 2 },
         {id: 2, name: "Boaty McBoatface", dockId: 3 },
-        {id: 3, name: "Seawise Giant", dockId: 1 }
+        {id: 3, name: "Seawise Giant", dockId: 2 },
+        {id: 4, name: "The Giant Hauler", dockId: 4}
     ],
     shippingShips: [
-        {id: 1, name: "Esso Atlantic", haulerId: 5 },
+        {id: 1, name: "Esso Atlantic", haulerId: 2 },
         {id: 2, name: "Prairial", haulerId: 3},
         {id: 3, name: "Palais Royal", haulerId: 1},
-        {id: 4, name: "Rivoli", haulerId: 6},
-        {id: 5, name: "Champs Elysee", haulerId: 4},
-        {id: 6, name: "Ever Ace", haulerId: 8},
-        {id: 7, name: "Nessei Maru", haulerId: 2},
-        {id: 8, name: "MSC Gulsun", haulerId: 7},
-        {id: 9, name: "HMM Rotterdam", haulerId: 10},
-        {id: 10, name: "CMA CGM Tracadero", haulerId: 9}
+        {id: 4, name: "Rivoli", haulerId: 4},
+        {id: 5, name: "Champs Elysee", haulerId: 3},
+        {id: 6, name: "Ever Ace", haulerId: 2},
+        {id: 7, name: "Nessei Maru", haulerId: 4},
+        {id: 8, name: "MSC Gulsun", haulerId: 1},
+        {id: 9, name: "HMM Rotterdam", haulerId: 3},
+        {id: 10, name: "CMA CGM Tracadero", haulerId: 1}
     ]
 }
 
