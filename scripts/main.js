@@ -9,15 +9,15 @@ const mainContainer = document.querySelector("#container")
 const applicationHTML = `
 <h1>Shipping Ship Tracker</h1>
 <article class="details">
-    <section class="detail--column list details__cities">
+    <section class="detail--column__list">
         <h2 class="header">Docks</h2>
         ${DockList()}
     </section>
-    <section class="detail--column list details__cities">
+    <section class="detail--column__list">
         <h2 class="header">Hauling Ships</h2>
         ${HaulersList()}
     </section>
-    <section class="detail--column list details__cities">
+    <section class="detail--column__list">
         <h2 class="header">Ships</h2>
         ${ShipsList()}
     </section>

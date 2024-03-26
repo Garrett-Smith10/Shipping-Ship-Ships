@@ -7,7 +7,7 @@ const database = {
     ],
     haulers: [
         {id: 1, name: "Pioneering Spirit", dockId: 2 },
-        {id: 2, name: "Boaty McBoatface", dockId: 3 },
+        {id: 2, name: "Boaty McBoatface", dockId: 2 },
         {id: 3, name: "Seawise Giant", dockId: 2 },
         {id: 4, name: "The Giant Hauler", dockId: 4}
     ],
@@ -26,13 +26,13 @@ const database = {
 }
 
 export const getDocks = () => {
-    return database.docks.map(dock => ({...dock}))
+    return database.docks.map(dock => ({...dock})).sort((a, b) => a.location.localeCompare(b.location))
 }
 
 export const getHaulingShips = () => {
-    return database.haulers.map(hauler => ({...hauler}))
+    return database.haulers.map(hauler => ({...hauler})).sort((a, b) => a.name.localeCompare(b.name))
 }
 
 export const getShippingShips = () => {
-    return database.shippingShips.map(shippingShip => ({...shippingShip}))
+    return database.shippingShips.map(shippingShip => ({...shippingShip})).sort((a, b) => a.name.localeCompare(b.name))
 }

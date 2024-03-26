@@ -2,6 +2,8 @@ import { getDocks, getHaulingShips } from "./database.js"
 
 const docks = getDocks()
 
+
+
 export const DockList = () => {
 
     let docksHTML = "<ul>"
@@ -9,10 +11,10 @@ export const DockList = () => {
     for (const dock of docks) {
         docksHTML += `<li data-type="docks" data-id="${dock.id}" data-name="${dock.location}"
          >${dock.location} holds ${dock.volume} tons of cargo</li>`
+         
     }
 
     docksHTML += "</ul>"
-
     return docksHTML
 }
 
@@ -31,11 +33,13 @@ document.addEventListener(
         let haulerArray = []
         
         let ships = getHaulingShips()
-
+        
         for (const ship of ships) {
             if (parseInt(dockId) === ship.dockId) {
                 dockLocation = itemClicked.dataset.name
                 haulerArray.push(ship.name)
+                haulerArray.sort()
+                
             }
             
         }
